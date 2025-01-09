@@ -22,5 +22,4 @@ if (unlink($fullpath)) {
     echo "No se pudo eliminar el archivo";
 }
 
-echo "El archivo ha sido eliminado!";
 ?>
