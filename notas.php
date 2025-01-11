@@ -53,7 +53,7 @@ class Director {
     public function AsignarCurso(Estudiante $estudiante, $curso) {
         $estudiante->setCurso($curso);
         $this->erasmus = 0;
-         }
+         
 
     switch ($curso) {
     case "informatica":
@@ -75,6 +75,7 @@ class Director {
          $this->erasmus = 0;
             
     
+      }
      }
 
     public function asignarNotas(Estudiante $estudiante, $notas) {
