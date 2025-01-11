@@ -76,7 +76,18 @@ class Director {
             
     
      }
+
+    public function asignarNotas(Estudiante $estudiante, $notas) {
+        $estudiante->setNotas($notas);
      }
-    
+
+    public function calcularPromedio (Estudiante $estudiante) {
+        $notas = $estudiante->getNotas();
+        if (empty($notas)) {
+            echo "no hay notas registradas";
+            return 0;
+            }
+        return array_sum($notas) / count($notas);
+    }
 
 ?>
