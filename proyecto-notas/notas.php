@@ -4,54 +4,89 @@ class estudiante {
     private $nombre;
     private $edad;
     private $curso;
-    private $periodos;
+    private $notas = [];
     
     
-    function __construct($nombre,$edad,$curso) {
+    public function __construct($nombre,$edad,$curso) {
         $this->nombre = $nombre;
         $this->edad = $edad;
         $this->curso = $curso;
     }
     
     
-    public function curso($curso) {
-        $this-> curso = $curso;
-        
-        switch ($curso) {
-            
-            case "informatica":
-                echo "es informatico";
-                break;
-            case "programador":
-                echo "eres un programador";
-            
-            case "redes":
-                echo "arquitecto de red";
-                break;
-            
-            default:
-                echo "estudias otra cosa";
-                
+   public function getNombre() {
+        return $this->nombre;
         }
-    }
-        
-        
-        public function setPeriodos($periodos) {
-            $this->periodos = $periodos;
-        }
-        
-        public function notas($nota1,$nota2,$nota3){
-            
-            $resultado = $nota1+$nota2+$nota3;
-            
-            $promedio = $resultado/$this->periodos;
-            
-            return $promedio;
+
+    public function getCurso() {
+        return $this->curso;
+         }
+
+        public function setCurso($curso) {
+            $this->curso = $curso;
+     }
+
+    public function getNotas() {
+         return $this->$notas;
+         }
+
+    protected function setNotas($notas) {
+        $this->notas = $notas
+         }
             
             
             
         }
     }
+
+
+
+
+
+
+
+
+class Director {
+    private $erasmus = 0;
+    public function AsignarCurso(Estudiante $estudiante, $curso) {
+        $estudiante->setCurso($curso);
+        $this->erasmus = 0;
+         
+
+    switch ($curso) {
+    case "informatica":
+    case "diseño grafico":
+    case "derecho":
+    case "marketing":
+    case "administracion":
+    case "economia":
+    case "enfermeria":
+    case "medicina":
+    case "arquitectura":
+    case "informatica":
+     case "fisica":
+        echo "eres de" . $curso . " estas en la lista para poder hacer erasmus"; 
+        $this->erasmus = 1;
+        break;
+    default:
+        echo "lo que estudias no esta en la lista para poder hacer erasmus"
+         $this->erasmus = 0;
+            
     
+      }
+     }
+
+    public function asignarNotas(Estudiante $estudiante, $notas) {
+        $estudiante->setNotas($notas);
+     }
+
+    public function calcularPromedio (Estudiante $estudiante) {
+        $notas = $estudiante->getNotas();
+        if (empty($notas)) {
+            echo "no hay notas registradas";
+            return 0;
+            }
+        return array_sum($notas) / count($notas);
+    }
 
 ?>
