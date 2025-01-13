@@ -1,7 +1,5 @@
 <?php
 
-
-
 class estudiante {
     private $nombre;
     private $edad;
