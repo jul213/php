@@ -43,6 +43,10 @@ class Estudiante {
          $this->notas[] = $nota;
         }
 
+    public function mostrarInfo(){
+        return "Nombre: {$this->nombre}, edad: {$this->edad}, curso: {$this->curso} y tiene las siguientes notas: {$this->notas}";
+}
+
 
 
 ?>
