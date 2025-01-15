@@ -33,9 +33,14 @@ class Estudiante {
     protected function setNotas($notas) {
         $this->notas = $notas;
          }
+
+    public function agregarNota($nota) {
+        if ($nota < 0 || $nota > 10) {
+            throw new Exception("pon una nota valida para agregar");
             
             
-            
+            }
+         $this->notas[] = $nota;
         }
 
 
