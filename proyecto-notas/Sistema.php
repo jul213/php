@@ -18,6 +18,11 @@
             }
             return false;
         }
+
+        public function listarEstudiantes (){
+            foreach ($this->estudiantes as $estudiante){
+                echo $estudiante-> mostrarinfo() . "/n";
+                }
     }
 
 
