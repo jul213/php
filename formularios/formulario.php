@@ -14,6 +14,15 @@
             <option value="computador">Computador</option>
             <option value="laptop">Portatil</option>
         </select>
+
+        <br>
+        <label for="opcion-1">
+            <input type="checkbox" value="si" id="opcion-1" name="si">
+            si me gusta
+        </label>
+        <br><br>
+
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
