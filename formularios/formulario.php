@@ -21,6 +21,11 @@
             <input type="checkbox" value="si" id="opcion-1" name="si">
             si me gusta
         </label>
+
+        <label for="opcion-2">
+            <input type="checkbox" value="no" id="opcion-2" name="no">
+            no me gusta
+        </label>
         <br><br>
 
         <button type="submit">Enviar</button>
