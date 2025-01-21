@@ -6,6 +6,8 @@
     <title>formulario</title>
 </head>
 <body>
-    
+    <form action="index.php" method="POST">
+        
+    </form>
 </body>
 </html>
