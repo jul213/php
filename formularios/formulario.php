@@ -8,7 +8,7 @@
 <body>
     <form action="index.php" method="POST">
         <label for="dispositivo">Dispositivo</label>
-        <select name="dispositivo" name="dispositivo">
+        <select name="dispositivo" name="dispositivo[]" multiple>
             <option value="ipad">Ipad</option>
             <option value="celular">Celular</option>
             <option value="computador">Computador</option>
