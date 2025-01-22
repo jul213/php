@@ -5,4 +5,6 @@ $opcion2 = $_POST["no"];
 foreach($_POST["dispositivo"] as $dispositivo){
     echo $dispositivo . "<br>";
 }
+
+echo $opcion1;
 ?>
