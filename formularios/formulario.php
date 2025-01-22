@@ -16,6 +16,7 @@
         </select>
 
         <br>
+        <br>
         <h1>te gusta la programacion?</h1>
         <label for="opcion-1">
             <input type="checkbox" value="si" id="opcion-1" name="si">
