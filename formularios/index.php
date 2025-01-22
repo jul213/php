@@ -7,4 +7,5 @@ foreach($_POST["dispositivo"] as $dispositivo){
 }
 
 echo $opcion1;
+echo $opcion2;
 ?>
