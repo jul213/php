@@ -10,5 +10,7 @@ if (isset($_POST["enviar"])){
     
 echo $opcion1;
 echo $opcion2;
-}
+} else {
+    echo "todavia no se envia el formulario";
+    }
 ?>
