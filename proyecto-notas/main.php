@@ -1,6 +1,6 @@
 <?php
 
-require_once "estudiante.php";
+require "estudiante.php";
 require_once "Director.php";
 
 $estudiante = new Estudiante("salomon",20,"informatica");
