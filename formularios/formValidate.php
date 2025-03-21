@@ -28,6 +28,12 @@
     ?>
 
     <h2>Validacion de Formulario</h2>
-    <form  method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"></form>
+    <form  method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <label for="name">Ingresa tu Nombre</label>
+        <input type="text" name="name">
+        <br>
+        <label for="email">Ingresa tu email</label>
+        <input type="text">
+    </form>
 </body>
 </html>
