@@ -55,5 +55,13 @@
         <br>
         <input type="submit" name="Submit">
     </form>
+
+    <?php 
+        if ($_SERVER["REQUEST_METHOD"] == "POST" && !$nameErr && !$emailErr){
+
+            echo "<h2>Datos recividos del formulario</h2>";
+            
+        }
+    ?>
 </body>
 </html>
