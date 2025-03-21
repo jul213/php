@@ -29,11 +29,17 @@
 
     <h2>Validacion de Formulario</h2>
     <form  method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <label for="name">Ingresa tu Nombre</label>
+        <label for="name">Ingresa tu Nombre: </label>
         <input type="text" name="name">
         <br>
-        <label for="email">Ingresa tu email</label>
-        <input type="text">
+        <label for="email">Ingresa tu email: </label>
+        <input type="email" name="email">
+        <br>
+        <label for="comentario">Comentario: </label>
+        <textarea name="comment" rows="20" cols="25"></textarea>
+        <br>
+        <label for="gender">Indique su genero: </label>
+        <input type="radio" name="gender">
     </form>
 </body>
 </html>
