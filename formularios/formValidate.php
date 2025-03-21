@@ -9,7 +9,7 @@
     <?php 
 
         $name = $email = $gender = $comment = $website = "";
-        $nameErr = $emailErr = $gennderErr = "";
+        $nameErr = $emailErr = $genderErr = "";
 
         if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -36,8 +36,13 @@
             } else {
                 $comment = test_input($_POST["comment"]);
             }
-            $comment = test_input($_POST["comment"]);
-            $gender = test_input($_POST["gender"]);
+            
+            if (empty($_POST["gender"])){
+                $genderErr = "Tienes que seleccionar uno";
+            } else {
+
+                $gender = test_input($_POST["gender"]);
+            }
         }
 
         function test_input($data){
