@@ -55,6 +55,7 @@
     ?>
 
     <h2>Validacion de Formulario</h2>
+    <p>mensajes de error señalados con un *</p>
     <form  method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="name">Ingresa tu Nombre: </label>
         <input type="text" name="name">
