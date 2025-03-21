@@ -58,9 +58,11 @@
     <form  method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="name">Ingresa tu Nombre: </label>
         <input type="text" name="name">
+        <span class="error">* <?php echo $nameErr; ?></span>
         <br>
         <label for="email">Ingresa tu email: </label>
         <input type="email" name="email">
+        <span class="error">* <?php echo $emailErr; ?></span>
         <br>
         <label for="comentario">Comentario: </label>
         <textarea name="comment" rows="20" cols="25"></textarea>
@@ -69,6 +71,7 @@
         <input type="radio" name="gender" value="mujer"> Mujer
         <input type="radio" name="gender" value="hombre"> Hombre
         <input type="radio" name="gender" value="other"> No decirlo
+        <span class="error">* <?php echo $genderErr; ?></span>
         <br>
         <input type="submit" name="Submit">
     </form>
