@@ -67,7 +67,9 @@
         <br>
         <label for="website">Ingresa tu website: </label>
         <input type="text" name="website">
+        <br>
         <label for="comentario">Comentario: </label>
+        <br>
         <textarea name="comment" rows="20" cols="25"></textarea>
         <br>
         <label for="gender">Indique su genero: </label>
