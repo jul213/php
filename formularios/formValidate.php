@@ -28,10 +28,10 @@
                 $website = "";
             } else {
                 
-                $comment = test_input($_POST["comment"]);
+                $website = test_input($_POST["website"]);
             }
+            $comment = test_input($_POST["comment"]);
             $gender = test_input($_POST["gender"]);
-            $website = test_input($_POST["website"]);
         }
 
         function test_input($data){
