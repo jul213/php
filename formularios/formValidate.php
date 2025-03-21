@@ -24,6 +24,10 @@
             $data = htmlspecialchars($data);
             return $data;
         }
+
     ?>
+
+    <h2>Validacion de Formulario</h2>
+    <form  method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"></form>
 </body>
 </html>
