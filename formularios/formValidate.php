@@ -43,7 +43,7 @@
         <input type="radio" name="gender" value="hombre"> Hombre
         <input type="radio" name="gender" value="other"> No decirlo
         <br>
-        <input type="submit">
+        <input type="submit" name="Submit">
     </form>
 </body>
 </html>
