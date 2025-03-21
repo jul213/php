@@ -39,7 +39,11 @@
         <textarea name="comment" rows="20" cols="25"></textarea>
         <br>
         <label for="gender">Indique su genero: </label>
-        <input type="radio" name="gender">
+        <input type="radio" name="gender" value="mujer"> Mujer
+        <input type="radio" name="gender" value="hombre"> Hombre
+        <input type="radio" name="gender" value="other"> No decirlo
+        <br>
+        <input type="submit">
     </form>
 </body>
 </html>
