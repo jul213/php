@@ -17,6 +17,13 @@
             $comment = test_input($_POST["comment"]);
             $website = test_input($_POST["website"]);
         }
+
+        function test_input($data){
+            $data = trim($data);
+            $data = stripslashes($data);
+            $data = htmlspecialchars($data);
+            return $data;
+        }
     ?>
 </body>
 </html>
