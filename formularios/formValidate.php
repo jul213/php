@@ -12,7 +12,13 @@
         $nameErr = $emailErr = "";
 
         if ($_SERVER["REQUEST_METHOD"] == "POST"){
-            $name = test_input($_POST["name"]);
+
+            if (empty($_POST[$name])){
+                $nameErr = "El campo es obligatorio no puede estar vacio";
+            } else {
+                $name = test_input($_POST["name"]);
+            }
+            
             $email = test_input($_POST["email"]);
             $gender = test_input($_POST["gender"]);
             $comment = test_input($_POST["comment"]);
