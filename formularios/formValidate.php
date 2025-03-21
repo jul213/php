@@ -23,8 +23,14 @@
             } else {
                 $email = test_input($_POST["email"]);
             }
+
+            if (empty($_POST["website"])) {
+                $website = "";
+            } else {
+                
+                $comment = test_input($_POST["comment"]);
+            }
             $gender = test_input($_POST["gender"]);
-            $comment = test_input($_POST["comment"]);
             $website = test_input($_POST["website"]);
         }
 
