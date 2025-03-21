@@ -9,7 +9,7 @@
     <?php 
 
         $name = $email = $gender = $comment = $website = "";
-        $nameErr = $emailErr = "";
+        $nameErr = $emailErr = $gennderErr = "";
 
         if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -29,6 +29,12 @@
             } else {
                 
                 $website = test_input($_POST["website"]);
+            }
+
+            if (empty($_POST["comment"])){
+                $comment =  "";
+            } else {
+                $comment = test_input($_POST["comment"]);
             }
             $comment = test_input($_POST["comment"]);
             $gender = test_input($_POST["gender"]);
