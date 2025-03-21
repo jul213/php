@@ -60,7 +60,11 @@
         if ($_SERVER["REQUEST_METHOD"] == "POST" && !$nameErr && !$emailErr){
 
             echo "<h2>Datos recividos del formulario</h2>";
-            
+            echo "Name: " . $name . "<br>";
+            echo "Email: " . $email . "<br>";
+            echo "Comentario: " . $comment . "<br>";
+            echo "genero: " . $gender . "<br>";
+            echo "website: " . $website . "<br>";
         }
     ?>
 </body>
