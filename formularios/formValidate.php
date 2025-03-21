@@ -65,6 +65,8 @@
         <input type="email" name="email">
         <span class="error">* <?php echo $emailErr; ?></span>
         <br>
+        <label for="website">Ingresa tu website: </label>
+        <input type="text" name="website">
         <label for="comentario">Comentario: </label>
         <textarea name="comment" rows="20" cols="25"></textarea>
         <br>
