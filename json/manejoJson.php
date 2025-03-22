@@ -13,7 +13,8 @@ echo json_encode($array);
     <title>mostramos formato amigable Json</title>
 </head>
 <body>
-    <?php 
+    <?php
+    $obj = '{"Peter":35,"Ben":37,"Joe":43}';
     echo json_decode($array);
     ?>
 </body>
