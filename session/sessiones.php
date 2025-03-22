@@ -13,6 +13,9 @@ session_start();
     <?php 
     $_SESSION["favcolor"] = "yellow";
     print_r($_SESSION);
+
+
+    session_unset();
     ?>
 </body>
 </html>
