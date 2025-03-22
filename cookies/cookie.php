@@ -15,5 +15,15 @@ setcookie($cookie_name, $cookie_value, time() + (8400 * 30),"/");
                 echo "value of the cookie is: " . $_COOKIE[$cookie_name];
             }
         ?>
+
+
+            <?php 
+             if (count($_COOKIE) > 0){
+                echo "cookies enabled";
+             } else {
+                echo ""
+             }
+            ?>
+
     </body>
 </html>
