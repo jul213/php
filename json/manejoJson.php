@@ -15,7 +15,12 @@ echo json_encode($array);
 <body>
     <?php
     $obj = '{"Peter":35,"Ben":37,"Joe":43}';
-    echo json_decode($array);
+    
+    $decoder = json_decode($array);
+
+    foreach ($decoder as $key => $value){
+        echo "la llave es: " . $key . "" . "con este valor: " . $value;
+    }
     ?>
 </body>
 </html>
