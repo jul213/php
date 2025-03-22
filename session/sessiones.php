@@ -12,6 +12,7 @@ session_start();
 <body>
     <?php 
     $_SESSION["favcolor"] = "yellow";
+    print_r($_SESSION);
     ?>
 </body>
 </html>
