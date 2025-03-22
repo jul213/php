@@ -14,4 +14,6 @@
     $txt = "soy una nueva linea";
 
     fwrite($file1, $txt);
+
+    fclose($file1);
 ?>
