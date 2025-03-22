@@ -6,4 +6,10 @@
     }
 
     fclose($file);
+
+
+
+    $file1 = fopen("lazy.txt", "w") or die("no se puede abrir el archivo");
+
+    
 ?>
