@@ -21,7 +21,7 @@ setcookie($cookie_name, $cookie_value, time() + (8400 * 30),"/");
              if (count($_COOKIE) > 0){
                 echo "cookies enabled";
              } else {
-                echo ""
+                echo "cookies disabled";
              }
             ?>
 
