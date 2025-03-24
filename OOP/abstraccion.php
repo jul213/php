@@ -37,5 +37,8 @@ class Audi extends Fabrica {
     }
 }
 
+$maserati = new Maserati("maserati", "modelo-3", 2000);
+echo $maserati->mensage();
+
 
 ?>
