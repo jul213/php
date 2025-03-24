@@ -7,4 +7,6 @@
             echo self::hola;
         }
     }
+
+    $buenas = new Productos();
 ?>
