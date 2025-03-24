@@ -26,7 +26,7 @@ class Maserati extends Fabrica {
 
 
 class Mclaren extends Fabrica {
-    public function message(): string {
+    public function mensage(): string {
         return "has escogido el Mclaren";
     }
 }
