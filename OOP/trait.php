@@ -6,4 +6,10 @@ trait Prioridades {
     }
 }
 
+trait Advertencias {
+    public function ad1(){
+        echo "advertencia de nivel 1 seleccionada precaucion";
+    }
+}
+
 ?>
