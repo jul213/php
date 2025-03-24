@@ -8,7 +8,9 @@ abstract class Fabrica {
     public $año;
 
     public function __construct($name, $modelo, $año){
-        
+        $this->name = $name;
+        $this->modelo = $modelo;
+        $this->año = $año;
     }
 }
 ?>
