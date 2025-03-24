@@ -31,5 +31,11 @@ class Mclaren extends Fabrica {
     }
 }
 
+class Audi extends Fabrica {
+    public function mensage(): string {
+        return "has escogido el Audi";
+    }
+}
+
 
 ?>
