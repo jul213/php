@@ -10,4 +10,8 @@
             echo "Meow";
         }
     }
+
+
+    $animal = new Cat();
+    $animal->sonido();
 ?>
