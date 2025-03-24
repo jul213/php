@@ -9,4 +9,5 @@
     }
 
     $buenas = new Productos();
-?>
+    $buenas->saludo();
+    ?>
