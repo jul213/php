@@ -12,5 +12,7 @@ abstract class Fabrica {
         $this->modelo = $modelo;
         $this->año = $año;
     }
+
+    abstract public function mensage(): string;
 }
 ?>
