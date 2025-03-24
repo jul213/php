@@ -15,4 +15,14 @@ abstract class Fabrica {
 
     abstract public function mensage(): string;
 }
+
+
+
+class Maserati extends Fabrica {
+    public function mensage(): string {
+        return "has escogido el Maserati";
+    }
+}
+
+
 ?>
