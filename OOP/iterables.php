@@ -5,4 +5,12 @@
             echo $item;
         }
     }
+
+
+    function getIterable():iterable {
+        return ["a", "b", "c"];
+    }
+
+
+    
 ?>
