@@ -20,10 +20,16 @@
     class B {
         private $d = 0;
         private $a = 0;
-        public function __contruct($x,$y){
+        public function __construct($x,$y){
             $this->d = $x;
             $this->a = $y;
         }
+
+        public function MostrarMensaje(){
+
+            A::mensaje($this->d,$this->a);
+        }
+
     }
 
 ?>
