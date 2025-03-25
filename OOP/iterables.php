@@ -30,6 +30,9 @@
     <?php 
     
         class MyIterator implements Iterator {
+            private $items = [];
+            private $pointer = 0;
+
             
         }
     ?>
