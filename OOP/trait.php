@@ -12,4 +12,9 @@ trait Advertencias {
     }
 }
 
+
+class usoPrioridades {
+    
+}
+
 ?>
