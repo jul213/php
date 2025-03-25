@@ -36,6 +36,10 @@
             public function __construct($items){
                 $this->items = array_values($items);
             }
+
+            public function current(){
+                return $this->items[$this->pointer];
+            }
         }
     ?>
 </body>
