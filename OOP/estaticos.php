@@ -7,4 +7,13 @@
 
     Bienvenida::Saludo();
 
+
+
+    class A {
+        public static function mensaje($valor1, $valor2){
+            echo "esta este valor: $valor1";
+            echo "este es otro valor: $valor2";
+        }
+    }
+
 ?>
