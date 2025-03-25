@@ -48,6 +48,10 @@
             public function next(){
                 $this->pointer++;
             }
+
+            public function rewind(){
+                $this->pointer = 0;
+            }
         }
     ?>
 </body>
