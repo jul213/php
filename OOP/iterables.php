@@ -56,6 +56,12 @@
             public function valid(){
                 return $this->pointer < count($this->items);
             }
+
+            function printIterable(iterable $miIterable){
+                foreach($miIterable as $item){
+                    echo $item;
+                }
+            }
         }
     ?>
 </body>
