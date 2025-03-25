@@ -14,7 +14,7 @@ trait Advertencias {
 
 
 class usoPrioridades {
-    
+    use Prioridades, Advertencias;   
 }
 
 ?>
