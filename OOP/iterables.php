@@ -33,7 +33,9 @@
             private $items = [];
             private $pointer = 0;
 
-            
+            public function __construct($items){
+                $this->items = array_values($items);
+            }
         }
     ?>
 </body>
