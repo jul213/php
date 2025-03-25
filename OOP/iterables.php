@@ -40,6 +40,12 @@
             public function current(){
                 return $this->items[$this->pointer];
             }
+
+            public function keys(){
+                return $this->pointer;
+            }
+
+            
         }
     ?>
 </body>
