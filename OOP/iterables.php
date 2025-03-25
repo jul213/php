@@ -45,7 +45,9 @@
                 return $this->pointer;
             }
 
-            
+            public function next(){
+                $this->pointer++;
+            }
         }
     ?>
 </body>
