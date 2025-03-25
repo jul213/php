@@ -52,6 +52,10 @@
             public function rewind(){
                 $this->pointer = 0;
             }
+
+            public function valid(){
+                return $this->pointer < count($this->items);
+            }
         }
     ?>
 </body>
