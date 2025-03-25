@@ -62,7 +62,11 @@
                     echo $item;
                 }
             }
+
         }
+
+        $iterator = new MyIterator(["a","b","c"]);
+        printIterable($iterator);
     ?>
 </body>
 </html>
