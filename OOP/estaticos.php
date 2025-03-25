@@ -16,4 +16,12 @@
         }
     }
 
+
+    class B {
+        
+        public function __contruct($x,$y){
+            
+        }
+    }
+
 ?>
